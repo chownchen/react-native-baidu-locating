@@ -1,18 +1,7 @@
-buildscript {
-  repositories {
-    jcenter()
-  }
-
-  dependencies {
-    classpath 'com.android.tools.build:gradle:1.2.3'
-  }
-}
-
 apply plugin: 'com.android.library'
 
 android {
   compileSdkVersion 25
-  buildToolsVersion "25.0.2"
 
   defaultConfig {
     minSdkVersion 16
@@ -36,6 +25,6 @@ repositories {
 }
 
 dependencies {
-  compile fileTree(dir: "libs", include: ["*.jar"])
-  compile "com.facebook.react:react-native:+"
+  implementation fileTree(dir: "libs", include: ["*.jar"])
+  implementation "com.facebook.react:react-native:+"
 }
